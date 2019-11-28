@@ -1,0 +1,47 @@
+#form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    align-content: center;
+    text-align: center;
+}
+#checkName, #checklastName, #checkEmail, #checkPassword{
+    display: none;
+    background: #ffff;
+    border: 1px solid red;
+    color: red;
+}
+#label{
+    margin-top: 20px;
+}
+#button{
+    margin-top: 20px;
+}
+#message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+  }
+  
+  /* Add a red text color and an "x" when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }

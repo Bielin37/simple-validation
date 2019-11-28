@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Test</h1>
+    <form id="form" action="index1.html">
+        <label id="label" for="name">Podaj Imie</label>
+        <input required type="name" id="name" placeholder="Podaj Imie"></input>
+        <div id="checkName">Proszę wprowadzić imię. Powinno składać się z min 3 liter!!</div>
+        <label id="label" for="lastName">Podaj Nazwisko</label>
+        <input required type="lastName"  id="lastName" placeholder="Podaj Nazwisko"></input>
+        <div id="checklastName">Proszę wprowadzić nazwisko. Powinno składać się z min 3 liter!!</div>
+        <label id="label" for="email">Podaj email</label>
+        <input required type="email" id="email" placeholder="Podaj email"></input>
+        <div id="checkEmail">Proszę wprowadzić prawidlowy email!</div>
+        <label id="label" for="password">Podaj Hasło</label>
+        <input required type="password" name="password" id="password" placeholder="podaj hasło"></input>
+        <div id="checkPassword">Proszę wprowadzić prawidlowe hasło min 6 znaków</div>
+        <div id="message">
+                <h3>Password must contain the following:</h3>
+                <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                <p id="number" class="invalid">A <b>number</b></p>
+                <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+              </div>
+        <button type="submit" id="button">Wyślij</button>
+    </form>
+    <script src="js.js"></script>
+</body>
+</html>
